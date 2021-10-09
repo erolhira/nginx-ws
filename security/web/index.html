@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>XSS Test</title>
+</head>
+<body>
+    <div>
+        <form name="XSS" action="name" method="GET">
+            <p>What is your name ?</p>
+            <input type="text" name="name">
+            <input type="submit" name="Submit">
+        </form>
+        <pre>Hello #name</pre>
+    </div>
+</body>
+</html>
